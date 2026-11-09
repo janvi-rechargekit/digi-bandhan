@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const FooterSection = () => {
   const footerLinks = [
     {
@@ -67,26 +68,22 @@ const FooterSection = () => {
                   <ul className="mt-3 flex flex-col gap-2.5">
                     {column.links.map((link) => (
                       <li key={link.name}>
-                        {/* 
-                          FIX: Added a conditional render to handle both 
-                          "#" links and React Router links correctly.
-                        */}
-                        {link.path === "#" ? (
-                          <a
-                            href={link.path}
-                            className="font-['Inter'] text-[14px] text-[#555555] transition-colors hover:text-[#EF2042] sm:text-[15px]"
-                          >
-                            {link.name}
-                          </a>
-                        ) : (
-                          <a
-                            href={link.path}
-                            className="font-['Inter'] text-[14px] text-[#555555] transition-colors hover:text-[#EF2042] sm:text-[15px]"
-                          >
-                            {link.name}
-                          </a>
-                        )}
-                      </li>
+  {link.path.startsWith('/') ? (
+    <Link
+      to={link.path}
+      className="font-['Inter'] text-[14px] text-[#555555] transition-colors hover:text-[#EF2042] sm:text-[15px]"
+    >
+      {link.name}
+    </Link>
+  ) : (
+    <a
+      href={link.path}
+      className="font-['Inter'] text-[14px] text-[#555555] transition-colors hover:text-[#EF2042] sm:text-[15px]"
+    >
+      {link.name}
+    </a>
+  )}
+</li>
                     ))}
                   </ul>
                 </div>
