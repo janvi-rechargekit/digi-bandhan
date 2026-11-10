@@ -53,7 +53,7 @@ const HeroSection = () => {
     >
       <div className="pointer-events-none absolute bottom-0 right-0 hidden h-full w-auto items-end justify-end select-none lg:flex">
         <img
-          src="/images/digibandhan-hero.png"
+          src="/images/digibandhan-hero.webp"
           alt="DigiBandhan retailer showing a successful digital payment"
           className="h-full w-auto object-contain object-right-bottom"
         />

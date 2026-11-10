@@ -33,7 +33,7 @@ const AepsHeroSection = () => {
         {/* RIGHT SIDE: Visual Image */}
         <div className="relative w-full lg:w-[55%] lg:self-start">
           <img
-            src="/images/aeps-hero-visual.png" 
+            src="/images/aeps-hero-visual.webp" 
             alt="Retailer using DigiBandhan services"
             className="mt-4 h-auto w-full object-contain object-right-top"
           />

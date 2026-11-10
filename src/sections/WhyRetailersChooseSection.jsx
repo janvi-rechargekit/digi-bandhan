@@ -100,7 +100,7 @@ const WhyRetailersChooseSection = () => {
             <div className="w-full lg:w-[48%]">
               <div className="w-full overflow-hidden rounded-[16px]">
                 <img
-                  src="/images/why-retailers-visual.png" 
+                  src="/images/why-retailers-visual.webp" 
                   alt="Retailer showing services on his phone"
                   // FIX 5: Set a max-height on large screens so the image doesn't stretch the section too tall
                   className="h-auto w-full object-cover lg:max-h-[500px] lg:object-contain lg:object-right"

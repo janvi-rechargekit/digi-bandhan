@@ -6,7 +6,7 @@ const ContactUsHeroSection = () => {
         <div className="absolute inset-y-0 left-0 z-10 w-28 bg-gradient-to-r from-white via-white/80 to-transparent xl:w-44" />
         
         <img
-          src="/images/contact-hero-visual.png"
+          src="/images/contact-hero-visual.webp"
           alt="DigiBandhan Customer Support Team"
           className="h-full w-full object-cover object-center"
         />
@@ -53,7 +53,7 @@ const ContactUsHeroSection = () => {
         {/* MOBILE VISUAL: Displayed below text on small screens */}
         <div className="relative mt-8 w-full overflow-hidden rounded-xl lg:hidden">
           <img
-            src="/images/contact-hero-visual.png"
+            src="/images/contact-hero-visual.webp"
             alt="DigiBandhan Customer Support Team"
             className="h-auto w-full max-h-[420px] object-cover object-center"
           />

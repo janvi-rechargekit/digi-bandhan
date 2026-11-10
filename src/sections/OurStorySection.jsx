@@ -35,7 +35,7 @@ const OurStorySection = () => {
           <div className="w-full lg:w-[50%]">
             <div className="w-full overflow-hidden rounded-[12px] lg:rounded-[16px]">
               <img
-                src="/images/our-story-visual.png"
+                src="/images/our-story-visual.webp"
                 alt="Local shopkeeper serving a customer"
                 className="h-auto w-full object-cover"
               />

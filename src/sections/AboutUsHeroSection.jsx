@@ -36,7 +36,7 @@ const AboutUsHeroSection = () => {
         {/* RIGHT SIDE: Visual Image */}
         <div className="relative mt-10 w-full lg:mt-0 lg:h-full lg:w-[50%]">
           <img
-            src="/images/about-hero-visual.png"
+            src="/images/about-hero-visual.webp"
             alt="Retailer using laptop in a store"
             className="h-auto w-full object-contain object-bottom lg:absolute lg:inset-0 lg:h-full lg:object-cover lg:object-left"
           />

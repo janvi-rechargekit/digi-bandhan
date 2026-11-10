@@ -25,67 +25,67 @@ const ProductsTabsSection = () => {
       title: "Sound box",
       description:
         "Keep your business updated with the Digibandhan Sound Box, designed to give instant audio alerts for every successful payment. Get clear and timely payment notifications without constantly checking your phone or dashboard. It helps reduce confusion at the counter and keeps transaction tracking quick and convenient. Perfect for shops and businesses handling frequent digital payments throughout the day.",
-      image: "/images/sound-box-visual.png",
+      image: "/images/sound-box-visual.webp",
     },
     "AePS": {
       title: "AEPS (Aadhaar Enabled Payment System)",
       description: "AEPS (Aadhaar Enabled Payment System) lets your users withdraw cash, check balance, and transfer money using just their Aadhaar number and fingerprint. It provides a convenient way to offer essential banking services through your platform, especially in areas with limited access to traditional banking.",
-      image: "/images/aeps-tab-visual.png", 
+      image: "/images/aeps-tab-visual.webp", 
     },
     "DMT": {
       title: "(DMT)Domestic Money Transfer",
       description: "Enable fast and safe domestic money transfers through your platform and help customers send funds securely to any bank account anytime with a smooth experience. Give your platform the reach to handle everyday payments with reliable processing and convenient fund movement.",
-      image: "/images/dmt-tab-visual.png",
+      image: "/images/dmt-tab-visual.webp",
     },
     "Micro ATM": {
       title: "Micro ATM",
       description: "Micro ATM enables businesses to offer convenient cash withdrawal and banking services, even in areas with limited access to traditional banking. With trustworthy transactions and easy operations, it helps expand your service reach and create new revenue opportunities. It also supports essential banking services through a compact, accessible setup, making it easier to serve more users across different locations.",
-      image: "/images/micro-atm-tab-visual.png",
+      image: "/images/micro-atm-tab-visual.webp",
     },
     "CMS": {
       title: "CMS (Cash Management System)",
       description: "Simplify cash management with CMS and manage collections, payments, and fund transfers from one platform. It gives your business greater control, faster transactions, and a more efficient way to manage everyday financial operations. With streamlined processes and better visibility, you can monitor cash flows more effectively and reduce the time spent on manual financial tasks.",
-      image: "/images/cms-tab-visual.png", 
+      image: "/images/cms-services.webp", 
     },
     "Utility Bill Payments": {
       title: "Utility Bill Payments",
       description: "Make everyday bill payments simple by offering customers a quick, convenient way to pay for electricity, water, gas, and other essential bills. Provide a smooth payment experience with reliable transactions and live bill updates, helping users stay on top of recurring payments with ease.",
-      image: "/images/utility-bills-tab-visual.png", 
+      image: "/images/utility-bill-payments.webp", 
     },
     "Recharge": {
       title: "Recharge",
       description: "Keep up with your customers' everyday needs with quick mobile, DTH, and FASTag recharges. It helps to simplify recharge services and gives a faster and more convenient way to pay. With a seamless recharge experience, customers can easily stay connected and manage their essential payments anytime.",
-      image: "/images/recharge-tab-visual.png",
+      image: "/images/recharge-tab-visual.webp",
     },
     "UPI QR": {
       title: "UPI QR",
       description: "Provides quick and convenient collections with UPI QR that allows customers to pay by simply scanning a code. It creates a faster checkout experience and makes online collections easier to manage. Businesses can accept payments instantly without cash or lengthy payment processes, while customers enjoy a simple and safe way to pay.",
-      image: "/images/upi-qr-tab-visual.png",
+      image: "/images/upi-qr-tab-visual.webp",
     },
     "Train Ticket Booking": {
       title: "Train Ticket Booking",
       description: "Gives customers a convenient way to reserve train journeys with a smooth booking experience. This service helps to expand travel offerings with easy access to train reservations, and customers can quickly search for available trains, check schedules, and complete bookings through a simple and reliable process.",
-      image: "/images/train-booking-tab-visual.png", 
+      image: "/images/train-booking-tab-visual.webp", 
     },
     "Bus Ticket Booking": {
       title: "Bus Ticket Booking",
       description: "Provide bus reservations with access to routes, schedules, and fares across multiple destinations. It gives your customers the ability to plan and book their journeys from a single platform. With real-time availability and streamlined booking, customers can quickly find buses and secure their seats easily.",
-      image: "/images/bus-booking-tab-visual.png",
+      image: "/images/bus-booking-tab-visual.webp",
     },
     "Flight Booking": {
       title: "Flight Booking",
       description: "Connect your clients with convenient air travel options across domestic and international routes. Make it easier to compare fares, choose preferred flights, and confirm journeys with minimal effort. Deliver a smooth and reliable booking experience that saves time and makes air travel planning more convenient.",
-      image: "/images/flight-booking-tab-visual.png",
+      image: "/images/flight-booking-tab-visual.webp",
     },
     "LIC Premium Payments": {
       title: "LIC Premium Payments",
       description: "Make LIC premium payments simpler with an easy digital payment service. Ensure that customers stay on top of their policy dues and complete payments without unnecessary delays.",
-      image: "/images/lic-premium-tab-visual.png", 
+      image: "/images/lic-premium-tab-visual.webp", 
     },
     "PAN Creation": {
       title: "PAN Creation",
       description: "Simplify PAN creation with a digital process that makes applications easier to manage. Ensure that your customers submit their details efficiently and get their PAN application process moving without unnecessary hassle.",
-      image: "/images/pan-creation-tab-visual.png", 
+      image: "/images/pan-creation-tab-visual.webp", 
     },
   };
 

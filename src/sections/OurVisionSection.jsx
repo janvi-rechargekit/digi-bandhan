@@ -35,7 +35,7 @@ const OurVisionSection = () => {
             <div className="w-full lg:w-[50%]">
               <div className="w-full overflow-hidden rounded-[16px] lg:rounded-[24px]">
                 <img
-                  src="/images/our-vision-visual.png" 
+                  src="/images/our-vision-visual.webp" 
                   alt="Shopkeeper using digital services on a computer"
                   className="h-auto w-full object-cover"
                 />
