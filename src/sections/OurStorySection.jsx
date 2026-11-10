@@ -1,6 +1,6 @@
 const OurStorySection = () => {
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
+    <section className="w-full bg-white pb-12 pt-6 sm:py-16 lg:py-20">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         
         {/* Main Container aligned with other sections */}
@@ -10,7 +10,7 @@ const OurStorySection = () => {
           <div className="w-full lg:w-[50%]">
             
             {/* Exported Heading Image */}
-            <div className="w-full max-w-[230px] sm:max-w-[240px] lg:max-w-[220px]">
+            <div className="w-full max-w-[160px] sm:max-w-[200px] lg:max-w-[220px]">
               <img
                 src="/images/our-story-heading.png" 
                 alt="Our Story"
