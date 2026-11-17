@@ -1,41 +1,7 @@
 import { useState } from "react";
 
-const FaqSection = () => {
+const FaqSection = ({ faqs = [] }) => {
   const [openIndex, setOpenIndex] = useState(null);
-
-  const faqs = [
-    {
-      question: "Is Digibandhan safe to use for financial transactions?",
-      answer:
-        "Yes, Digibandhan uses bank-grade security and encryption protocols to ensure all your financial transactions and customer data are completely safe and secure.",
-    },
-    {
-      question: "Do I need technical knowledge to start?",
-      answer:
-        "Not at all. The platform is designed to be user-friendly and intuitive. If you can use a smartphone, you can easily use Digibandhan to offer services.",
-    },
-    {
-      question: "How quickly can I start offering services?",
-      answer:
-        "Once your KYC and documents are verified, you can log in and start offering services immediately. The verification process typically takes less than 24 hours.",
-    },
-    {
-      question: "What support do I get after joining?",
-      answer:
-        "You get dedicated customer support, training materials, and access to our help center to resolve any queries you might have while serving customers.",
-    },
-    {
-      question: "Can I offer more than one service at a time?",
-      answer:
-        "Yes, you can offer multiple services like banking, payments, travel, recharge, and more simultaneously from your single Digibandhan account.",
-    },
-    {
-      question: "Is there a minimum investment to join?",
-      answer:
-        "There is no heavy minimum investment required. You can start earning by serving customers without buying stock or locking up your money.",
-    },
-  ];
-
   const toggleFaq = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

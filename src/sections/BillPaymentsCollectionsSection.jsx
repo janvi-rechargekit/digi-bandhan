@@ -64,7 +64,7 @@ const billPaymentServices = [
 
 const BillPaymentsCollectionsSection = () => {
   return (
-    <section className=" w-full bg-white pb-12 sm:pb-16 lg:pt-0 lg:pb-20">
+    <section className="relative z-20 isolate w-full bg-white pb-12 sm:pb-16 lg:pt-0 lg:pb-20">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1250px]">
 
@@ -84,11 +84,12 @@ const BillPaymentsCollectionsSection = () => {
           </div>
 
           {/* Scroll Stacking Cards */}
-          <div className="flex flex-col gap-12 lg:block">
+          <div className="relative flex flex-col gap-12 lg:block">
             {billPaymentServices.map((service, index) => (
               <div
                 key={service.id}
-                className="relative lg:sticky lg:top-[110px] lg:mb-[108px]"
+                id={service.id}
+                className="relative scroll-mt-[160px] lg:sticky lg:top-[110px] lg:mb-[108px]"
                 style={{ zIndex: index + 1 }}
               >
                 <div

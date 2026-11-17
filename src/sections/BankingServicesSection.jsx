@@ -52,7 +52,7 @@ const bankingServices = [
 
 const BankingServicesSection = () => {
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 lg:-mt-22">
+    <section className="relative z-10 isolate w-full bg-white py-12 sm:py-16 lg:py-20 lg:-mt-22">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1250px]">
 
@@ -73,11 +73,12 @@ const BankingServicesSection = () => {
           </div>
 
           {/* Stacking Banking Service Cards */}
-          <div className="flex flex-col gap-12 lg:block">
+          <div className="relative flex flex-col gap-12 lg:block">
             {bankingServices.map((service, index) => (
               <div
                 key={service.id}
-                className="relative lg:sticky lg:top-[110px] lg:mb-16"
+                id={service.id}
+                className="relative scroll-mt-[160px] lg:sticky lg:top-[110px] lg:mb-[108px]"
                 style={{ zIndex: index + 1 }}
               >
                 <div

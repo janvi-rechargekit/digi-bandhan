@@ -14,7 +14,8 @@ import ContactPage from './ContactPage';
 import AboutPage from './AboutPage'; 
 import AepsPage from './AepsPage';
 import ProductsTabsSection from './sections/ProductsTabsSection';
-
+import LoginPage from './components/LoginPage';
+import {homeFaqs} from './data'
 const HomePage = () => (
   <>
     <HeroSection />
@@ -25,7 +26,7 @@ const HomePage = () => (
     <WhatYouCanEarnSection />
     <StartThreeStepsSection />
     <JoinNowSection />
-    <FaqSection />
+    <FaqSection faqs={homeFaqs} />
     <FooterSection />
   </>
 );
@@ -45,7 +46,10 @@ function App() {
         {/* Contact Route */}
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} /> 
-        <Route path="/aadhaar-enabled-payment-system" element={<AepsPage />} />
+        <Route path="/product" element={<AepsPage />} />
+
+        {/* Login Route */}
+        <Route path="/login" element={<LoginPage />} /> 
       </Routes>
     </BrowserRouter>
   );

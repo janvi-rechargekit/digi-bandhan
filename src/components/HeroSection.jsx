@@ -114,7 +114,7 @@ const HeroSection = () => {
           <div className="mt-6 lg:mt-8 mb-6 sm:mb-8 lg:mb-0">
             <a
               href="#contact"
-              className="inline-flex w-[180px] sm:w-[200px] lg:w-[230px] xl:w-[260px] items-center justify-center rounded-[12px] lg:rounded-[14px] bg-[#E42440] py-[10px] sm:py-[12px] lg:py-[14px] xl:py-[16px] font-['Inter'] text-[15px] sm:text-[17px] lg:text-[18px] xl:text-[20px] font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gradient-to-r hover:from-[#EF4444] hover:via-[#8B5CF6] hover:to-[#3730A3] hover:shadow-lg"
+              className="inline-flex w-[160px] sm:w-[180px] lg:w-[200px] xl:w-[220px] items-center justify-center rounded-[12px] lg:rounded-[14px] bg-[#E42440] py-[10px] sm:py-[12px] lg:py-[14px] xl:py-[16px] font-['Inter'] text-[15px] sm:text-[17px] lg:text-[18px] xl:text-[20px] font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gradient-to-r hover:from-[#EF4444] hover:via-[#8B5CF6] hover:to-[#3730A3] hover:shadow-lg"
             >
               Get Started
             </a>

@@ -1,6 +1,6 @@
 const DigitalPaymentsSection = () => {
   return (
-    <section className="w-full bg-white pb-12  sm:pb-16 lg:pt-0 lg:pb-20">
+    <section className="relative z-30 isolate w-full bg-white pb-12 sm:pb-16 lg:pt-0 lg:pb-20">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         
         {/* Inner Container aligned with other sections */}
@@ -20,7 +20,9 @@ const DigitalPaymentsSection = () => {
 
           {/* Main Card Container */}
           {/* FIX: Reduced the min-height and overall vertical padding to make the card shorter */}
-          <div className="flex w-full flex-col overflow-hidden rounded-[16px] border border-[#E5E7EB] bg-white shadow-sm lg:flex-row lg:items-stretch lg:min-h-[380px]">
+          <div
+          id="upi-qr"
+          className="flex w-full scroll-mt-[160px] flex-col overflow-hidden rounded-[16px] border border-[#E5E7EB] bg-white shadow-sm lg:flex-row lg:items-stretch lg:min-h-[380px]">
             
             {/* Left Side: Text Content inside the Card */}
             {/* FIX: Reduced vertical padding to pull content tighter */}

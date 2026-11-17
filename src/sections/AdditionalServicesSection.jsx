@@ -1,6 +1,6 @@
 const AdditionalServicesSection = () => {
   return (
-    <section className="w-full bg-white pt-4 pb-12 sm:pt-6 sm:pb-16 lg:pt-8 lg:pb-20">
+    <section className="relative z-50 isolate w-full bg-white pt-4 pb-12 sm:pt-6 sm:pb-16 lg:pt-8 lg:pb-20">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         
         {/* Inner Container aligned with other sections */}
@@ -20,7 +20,9 @@ const AdditionalServicesSection = () => {
 
           {/* Main Card Container */}
           {/* Uses a border and rounded corners to match the outer container in the Figma */}
-          <div className="flex w-full flex-col overflow-hidden rounded-[16px] border border-[#E5E7EB] bg-white shadow-sm lg:flex-row lg:items-stretch lg:min-h-[400px]">
+          <div
+          id="pan-card"
+          className="flex w-full scroll-mt-[160px] flex-col overflow-hidden rounded-[16px] border border-[#E5E7EB] bg-white shadow-sm lg:flex-row lg:items-stretch lg:min-h-[400px]">
             
             {/* Left Side: Visual Image */}
             <div className="relative w-full lg:w-[48%]">

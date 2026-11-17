@@ -40,7 +40,7 @@ const travelServices = [
 
 const TravelBookingServicesSection = () => {
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:pt-0 lg:pb-20">
+    <section className="relative z-40 isolate w-full bg-white py-12 sm:py-16 lg:pt-0 lg:pb-20">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1250px]">
 
@@ -61,12 +61,13 @@ const TravelBookingServicesSection = () => {
           </div>
 
           {/* Scroll Stacking Cards - Same Structure as Bill Payments */}
-          <div className="flex flex-col gap-12 lg:block">
+          <div className="relative flex flex-col gap-12 lg:block">
 
             {travelServices.map((service, index) => (
               <div
                 key={service.id}
-                className="relative lg:sticky lg:top-[110px] lg:mb-[108px]"
+                id={service.id}
+                className="relative scroll-mt-[160px] lg:sticky lg:top-[110px] lg:mb-[108px]"
                 style={{ zIndex: index + 1 }}
               >
                 <div

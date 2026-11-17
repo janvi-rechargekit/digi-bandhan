@@ -60,12 +60,32 @@ const ContactFormSection = () => {
                   Phone number
                 </label>
                 <div className="flex h-[44px] overflow-hidden rounded-[6px] border border-[#D1D5DB] transition-colors focus-within:border-[#4D3ECA]">
-                  <div className="flex items-center gap-1 border-r border-[#D1D5DB] bg-[#F9FAFB] px-3 text-[14px] text-[#111111]">
-                    US <span className="text-[10px]">▼</span>
+                  <div className="relative flex w-[118px] shrink-0 items-center border-r border-[#D1D5DB] bg-[#F9FAFB]">
+                    <select
+                      defaultValue="+91"
+                      aria-label="Country phone code"
+                      className="h-full w-full appearance-none bg-transparent pl-3 pr-6 font-['Inter'] text-[14px] text-[#111111] outline-none cursor-pointer"
+                    >
+                      <option value="+91">India (+91)</option>
+                      <option value="+1">US (+1)</option>
+                      <option value="+44">UK (+44)</option>
+                      <option value="+971">UAE (+971)</option>
+                      <option value="+1-ca">Canada (+1)</option>
+                      <option value="+61">Australia (+61)</option>
+                      <option value="+65">Singapore (+65)</option>
+                      <option value="+966">Saudi (+966)</option>
+                      <option value="+974">Qatar (+974)</option>
+                      <option value="+965">Kuwait (+965)</option>
+                      <option value="+49">Germany (+49)</option>
+                      <option value="+33">France (+33)</option>
+                    </select>
+                    <span className="pointer-events-none absolute right-2.5 text-[10px] text-[#6B7280]">
+                      ▼
+                    </span>
                   </div>
                   <input
                     type="tel"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="98765 43210"
                     className="w-full px-3 font-['Inter'] text-[14px] text-[#111111] placeholder-[#9CA3AF] outline-none"
                   />
                 </div>
@@ -155,7 +175,7 @@ const ContactFormSection = () => {
                   Our friendly team is here to help.
                 </p>
                 <a href="mailto:hi@agency.com" className="mt-1 font-['Inter'] text-[15px] font-medium text-[#5C4DFF] hover:underline">
-                  hi@agency.com
+                  digibandhantechnology@gmail.com
                 </a>
               </div>
 
