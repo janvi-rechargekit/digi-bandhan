@@ -1,6 +1,8 @@
+import { useLeadForm } from '../context/LeadFormContext'
 import { useEffect, useState } from 'react'
 
 const HeroSection = () => {
+  const { openLeadForm } = useLeadForm()
   const [currentWordIndex, setCurrentWordIndex] = useState(0)
   const [previousWordIndex, setPreviousWordIndex] = useState(null)
   const [animationPhase, setAnimationPhase] = useState('settled')
@@ -53,7 +55,7 @@ const HeroSection = () => {
     >
       <div className="pointer-events-none absolute bottom-0 right-0 hidden h-full w-auto items-end justify-end select-none lg:flex">
         <img
-          src="/images/digibandhan-hero.webp"
+          src="/images/digibandhan-hero.jpeg"
           alt="DigiBandhan retailer showing a successful digital payment"
           className="h-full w-auto object-contain object-right-bottom"
         />
@@ -101,23 +103,24 @@ const HeroSection = () => {
               </span>
             </span>
 
-            <span className="block">ke liye Digibandhan</span>
+            <span className="block">ke liye DigiBandhan</span>
           </h1>
 
           <p className="mt-4 lg:mt-5 w-full max-w-[480px] xl:max-w-[520px] font-['Inter'] text-[15px] sm:text-[16px] lg:text-[16px] xl:text-[18px] font-normal leading-[1.48] text-[#111111] tracking-[-0.3px] lg:tracking-[-0.4px]">
             Become part of a growing network of 1Lakhs+ shop owners across
-            India who already trust Digibandhan to serve their customers. Offer
+            India who already trust DigiBandhan to serve their customers. Offer
             banking, payments, recharge, and travel services from one platform
             while earning on every transaction.
           </p>
 
           <div className="mt-6 lg:mt-8 mb-6 sm:mb-8 lg:mb-0">
-            <a
-              href="#contact"
-              className="inline-flex w-[160px] sm:w-[180px] lg:w-[200px] xl:w-[220px] items-center justify-center rounded-[12px] lg:rounded-[14px] bg-[#E42440] py-[10px] sm:py-[12px] lg:py-[14px] xl:py-[16px] font-['Inter'] text-[15px] sm:text-[17px] lg:text-[18px] xl:text-[20px] font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gradient-to-r hover:from-[#EF4444] hover:via-[#8B5CF6] hover:to-[#3730A3] hover:shadow-lg"
+            <button
+              type="button"
+              onClick={() => openLeadForm('Home Hero')}
+              className="inline-flex cursor-pointer w-[160px] sm:w-[180px] lg:w-[200px] xl:w-[220px] items-center justify-center rounded-[12px] lg:rounded-[14px] bg-[#E42440] py-[10px] sm:py-[12px] lg:py-[14px] xl:py-[16px] font-['Inter'] text-[15px] sm:text-[17px] lg:text-[18px] xl:text-[20px] font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gradient-to-r hover:from-[#EF4444] hover:via-[#8B5CF6] hover:to-[#3730A3] hover:shadow-lg"
             >
               Get Started
-            </a>
+            </button>
           </div>
 
         </div>

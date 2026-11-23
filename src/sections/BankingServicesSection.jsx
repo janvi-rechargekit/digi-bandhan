@@ -25,18 +25,6 @@ const bankingServices = [
     imagePosition: "left",
   },
   {
-    id: "dmt",
-    title: "DMT (Domestic Money Transfer)",
-    points: [
-      "Helps customers transfer money directly to any bank account across India.",
-      "Allows customers to send money conveniently without visiting a bank branch.",
-      "Useful for migrant workers, families, and customers who regularly send money to other locations.",
-    ],
-    image: "/images/dmt-banking-services.png",
-    alt: "Customer using a smartphone for domestic money transfer",
-    imagePosition: "right",
-  },
-  {
     id: "upi-cash",
     title: "UPI Cash Withdrawal",
     points: [
@@ -52,12 +40,14 @@ const bankingServices = [
 
 const BankingServicesSection = () => {
   return (
-    <section className="relative z-10 isolate w-full bg-white py-12 sm:py-16 lg:py-20 lg:-mt-22">
+    <section
+     id="aeps" 
+     className="relative z-10 isolate w-full bg-white py-12 sm:py-16 lg:py-20 lg:-mt-22">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1250px]">
 
           {/* Section Heading */}
-          <div className="mb-8 lg:mb-10">
+          <div className="mb-5 lg:mb-4">
             <h2 className="font-['Inter'] text-[32px] font-semibold leading-[1.2] tracking-tight sm:text-[40px] lg:text-[48px]">
               <span className="bg-gradient-to-r from-[#1A1A9C] via-[#A41B55] to-[#EF2042] bg-clip-text text-transparent">
                 Banking Services
@@ -73,20 +63,19 @@ const BankingServicesSection = () => {
           </div>
 
           {/* Stacking Banking Service Cards */}
-          <div className="relative flex flex-col gap-12 lg:block">
+          <div className="relative flex flex-col gap-12 lg:h-[560px] lg:overflow-y-auto lg:overflow-x-hidden lg:pr-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {bankingServices.map((service, index) => (
               <div
                 key={service.id}
                 id={service.id}
-                className="relative scroll-mt-[160px] lg:sticky lg:top-[110px] lg:mb-[108px]"
+                className="relative scroll-mt-[160px] lg:sticky lg:top-10 lg:mb-[108px]"
                 style={{ zIndex: index + 1 }}
               >
                 <div
-                  className={`flex w-full flex-col overflow-hidden rounded-[12px] border border-[#D1D5DB] bg-white shadow-sm lg:h-[390px] lg:flex-row ${
-                    service.imagePosition === "left"
+                  className={`flex w-full flex-col overflow-hidden rounded-[12px] border border-[#D1D5DB] bg-white shadow-sm lg:h-[390px] lg:flex-row ${service.imagePosition === "left"
                       ? "lg:flex-row"
                       : "lg:flex-row-reverse"
-                  }`}
+                    }`}
                 >
                   {/* Image */}
                   <div className="h-[230px] w-full overflow-hidden bg-[#F8FAFF] sm:h-[280px] lg:h-full lg:w-[50%]">

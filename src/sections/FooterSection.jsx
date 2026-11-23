@@ -4,11 +4,11 @@ const FooterSection = () => {
     {
       heading: "Products",
       links: [
-        { name: "Banking service", path: "#" },
-        { name: "Bill Payments", path: "#" },
-        { name: "Digital Payment", path: "#" },
-        { name: "Travel Booking Service", path: "#" },
-        { name: "Additional Services", path: "#" },
+        { name: "Banking service", path: "/product#aeps" },
+        { name: "Bill Payments", path: "/product#utility-bills" },
+        { name: "Digital Payment", path: "/product#upi-qr" },
+        { name: "Travel Booking Service", path: "/product#train" },
+        { name: "Additional Services", path: "/product#pan-card" },
       ],
     },
     {

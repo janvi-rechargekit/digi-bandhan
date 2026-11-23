@@ -16,10 +16,6 @@ const ContactUsHeroSection = () => {
       <div className="relative mx-auto flex w-full max-w-[1526px] flex-col justify-center px-4 py-10 sm:px-6 md:px-8 lg:h-[580px] lg:py-0 lg:pl-[80px] xl:h-[630px] xl:pl-[112px]">
         
         {/* LEFT CONTENT */}
-        {/* 
-          FIX: Removed `translate-x-6` from the base class and added `lg:translate-x-6`. 
-          This ensures the text doesn't push off the screen on mobile.
-        */}
         <div className="relative z-10 -mt-10 flex w-full flex-col justify-center lg:w-[50%] lg:translate-x-6 xl:w-[48%]">
           
           {/* Heading */}
@@ -37,10 +33,6 @@ const ContactUsHeroSection = () => {
           </h1>
 
           {/* Description Paragraph */}
-          {/* 
-            FIX: Added `<br className="hidden lg:block" />` to force the exact 4-line breaks on desktop, 
-            while letting it wrap naturally on mobile. 
-          */}
           <p className="mt-7 max-w-[620px] font-['Inter'] font-normal text-[15px] leading-[1.46] tracking-[-0.4px] text-[#111111] sm:text-[17px] lg:mt-8 lg:text-[18px] lg:tracking-[-0.6px] xl:text-[20px]">
             Our team is here to help you with the information <br className="hidden lg:block" />
             and support you need. <br className="hidden lg:block" />

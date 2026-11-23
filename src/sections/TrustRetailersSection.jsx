@@ -7,7 +7,12 @@ const TrustRetailersSection = () => {
     { image: "/images/trusted-retailers-card-3.png", alt: "Instant settlements" },
     { image: "/images/trusted-retailers-card-4.png", alt: "Instant everything in one dashboard" },
     { image: "/images/trusted-retailers-card-5.png", alt: "24/7 dedicated support" },
-    { image: "/images/trusted-retailers-card-6.png", alt: "A growing partner network" },
+    {
+      image: "/images/trusted-retailers-card-6.jpeg",
+      alt: "A growing partner network",
+      title: "A growing partner network",
+      description: "Join businesses already using our platform across both urban and rural India.",
+    },
   ];
 
   const [visibleCount, setVisibleCount] = useState(3);
@@ -18,7 +23,7 @@ const TrustRetailersSection = () => {
       const width = window.innerWidth;
       const nextCount = width >= 1024 ? 3 : width >= 640 ? 2 : 1;
       setVisibleCount(nextCount);
-      setCurrentIndex(0);
+      setCurrentIndex(cards.length - nextCount);
     };
 
     updateVisibleCount();
@@ -30,7 +35,7 @@ const TrustRetailersSection = () => {
     const interval = window.setInterval(() => {
       setCurrentIndex((index) => {
         const lastStart = cards.length - visibleCount;
-        return index >= lastStart ? 0 : Math.min(index + visibleCount, lastStart);
+        return index <= 0 ? cards.length - visibleCount : Math.max(index - visibleCount, 0);
       });
     }, 4500);
 
@@ -42,7 +47,7 @@ const TrustRetailersSection = () => {
   const translateX = `${(currentIndex * 100) / cards.length}%`;
 
   return (
-    <section className="w-full overflow-hidden bg-white pt-0 pb-12 sm:pt-4 sm:pb-16 lg:pt-10 lg:pb-4">
+    <section className="w-full overflow-hidden bg-white pt-0 pb-12 sm:pt-4 sm:pb-16 lg:pt-10 lg:pb-20">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1250px]">
           <h2 className="max-w-[650px] font-['Inter'] text-[28px] font-semibold leading-[1.2] tracking-[-1px] text-black sm:text-[36px] lg:text-[36px]">
@@ -68,14 +73,35 @@ const TrustRetailersSection = () => {
                   className="shrink-0 px-2 sm:px-2.5 lg:px-3"
                   style={{ flex: `0 0 ${cardWidth}` }}
                 >
-                  <div className="w-full overflow-hidden rounded-[16px]">
-                    <img
-                      src={card.image}
-                      alt={card.alt}
-                      className="block h-auto w-full"
-                      draggable="false"
-                    />
-                  </div>
+                  {card.title ? (
+                    <div className="relative flex w-full aspect-[473/651] flex-col justify-between overflow-hidden rounded-[16px] bg-[#21066c]">
+                      <div className="z-10 px-[7.5%] pt-[12.5%]">
+                        <h3 className="font-['Inter'] text-[20px] font-semibold leading-[1.2] tracking-[-0.02em] text-white sm:text-[23px] lg:text-[26px]">
+                          {card.title}
+                        </h3>
+                        <p className="mt-5 sm:mt-6 lg:mt-7 max-w-[92%] sm:max-w-[88%] font-['Inter'] text-[15px] sm:text-[17px] lg:text-[19px] font-normal leading-[1.45] sm:leading-[1.5] tracking-[-0.01em] text-white">
+                          {card.description}
+                        </p>
+                      </div>
+                      <div className="mt-auto w-full overflow-hidden">
+                        <img
+                          src={card.image}
+                          alt={card.alt}
+                          className="block h-auto w-full object-cover object-bottom"
+                          draggable="false"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="w-full overflow-hidden rounded-[16px]">
+                      <img
+                        src={card.image}
+                        alt={card.alt}
+                        className="block h-auto w-full"
+                        draggable="false"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

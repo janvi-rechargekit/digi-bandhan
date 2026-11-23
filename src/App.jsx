@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AnnouncementBar from './components/AnnouncementBar';
+//import AnnouncementBar from './components/AnnouncementBar';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ServicesIntroSection from './sections/ServicesIntroSection';
@@ -16,6 +16,7 @@ import AepsPage from './AepsPage';
 import ProductsTabsSection from './sections/ProductsTabsSection';
 import LoginPage from './components/LoginPage';
 import {homeFaqs} from './data'
+import { LeadFormProvider } from './context/LeadFormContext';
 const HomePage = () => (
   <>
     <HeroSection />
@@ -34,8 +35,9 @@ const HomePage = () => (
 function App() {
   return (
     <BrowserRouter>
+      <LeadFormProvider>
       <header className="sticky top-0 z-50 w-full">
-        <AnnouncementBar />
+        {/* <AnnouncementBar /> */}
         <Navbar />
       </header>
 
@@ -51,6 +53,7 @@ function App() {
         {/* Login Route */}
         <Route path="/login" element={<LoginPage />} /> 
       </Routes>
+      </LeadFormProvider>
     </BrowserRouter>
   );
 }

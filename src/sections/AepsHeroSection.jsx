@@ -1,4 +1,6 @@
+import { useLeadForm } from '../context/LeadFormContext'
 const AepsHeroSection = () => {
+  const { openLeadForm } = useLeadForm()
   return (
     <section className="relative w-full overflow-hidden bg-white">
       {/* Main Container */}
@@ -20,12 +22,13 @@ const AepsHeroSection = () => {
 
           {/* CTA Button */}
           <div className="mt-8 lg:mt-10">
-            <a
-              href="#contact"
-              className="inline-flex h-[48px] items-center justify-center rounded-[8px] bg-[#E31E24] px-8 font-['Inter'] text-[16px] font-medium text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-[#EF4444] hover:via-[#8B5CF6] hover:to-[#3730A3] hover:shadow-lg sm:h-[52px] sm:px-10 sm:text-[18px]"
+            <button
+              type="button"
+              onClick={() => openLeadForm('Product Hero')}
+              className="inline-flex cursor-pointer h-[48px] items-center justify-center rounded-[8px] bg-[#E31E24] px-8 font-['Inter'] text-[16px] font-medium text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-[#EF4444] hover:via-[#8B5CF6] hover:to-[#3730A3] hover:shadow-lg sm:h-[52px] sm:px-10 sm:text-[18px]"
             >
               Get Started
-            </a>
+            </button>
           </div>
 
         </div>

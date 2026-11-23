@@ -44,12 +44,12 @@ const WhyPartnersChooseSection = () => {
             <div className="w-full max-w-[500px] -ml-2 sm:ml-0">
               <img
                 src="/images/why-partners-heading.png" 
-                alt="Why Partners Choose Digibandhan"
+                alt="Why Partners Choose DigiBandhan"
                 className="translate-x-4 h-auto w-full object-contain"
               />
             </div>
             <p className="translate-x-4 mt-6 max-w-[600px] font-['Inter'] text-[16px] leading-[1.6] text-[#333333] sm:text-[18px]">
-              Thousands of businesses trust Digibandhan because we focus on what actually matters to our partners:
+              Thousands of businesses trust DigiBandhan because we focus on what actually matters to our partners:
             </p>
           </div>
 

@@ -64,12 +64,15 @@ const billPaymentServices = [
 
 const BillPaymentsCollectionsSection = () => {
   return (
-    <section className="relative z-20 isolate w-full bg-white pb-12 sm:pb-16 lg:pt-0 lg:pb-20">
+    <section
+      id="utility-bills"
+      className="relative z-20 isolate w-full bg-white pb-12 sm:pb-16 lg:pt-0 lg:pb-20"
+    >
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[1250px]">
 
-          {/* Section Heading */}
-          <div className="mb-10 lg:mb-14">
+          {/* Section Heading - Not Sticky */}
+          <div className="mb-5 lg:mb-4">
             <h2 className="font-['Inter'] text-[32px] font-semibold leading-[1.2] tracking-tight sm:text-[40px] lg:text-[48px]">
               <span className="bg-gradient-to-r from-[#1A1A9C] via-[#A41B55] to-[#EF2042] bg-clip-text text-transparent">
                 Bill Payments & Collections
@@ -83,13 +86,14 @@ const BillPaymentsCollectionsSection = () => {
             </p>
           </div>
 
-          {/* Scroll Stacking Cards */}
-          <div className="relative flex flex-col gap-12 lg:block">
+          {/* Independent Scroll Area for Banking Cards */}
+          <div className="relative flex flex-col gap-12 lg:h-[560px] lg:overflow-y-auto lg:overflow-x-hidden lg:pr-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+
             {billPaymentServices.map((service, index) => (
               <div
                 key={service.id}
                 id={service.id}
-                className="relative scroll-mt-[160px] lg:sticky lg:top-[110px] lg:mb-[108px]"
+                className="relative scroll-mt-[160px] lg:sticky lg:top-0 lg:mb-[108px]"
                 style={{ zIndex: index + 1 }}
               >
                 <div
@@ -126,8 +130,8 @@ const BillPaymentsCollectionsSection = () => {
                 </div>
               </div>
             ))}
-          </div>
 
+          </div>
         </div>
       </div>
     </section>

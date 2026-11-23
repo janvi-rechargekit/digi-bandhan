@@ -39,7 +39,7 @@ const GrowthOpportunitiesSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white pt-0 pb-4 sm:pt-0 sm:pb-8 lg:pt-0 lg:pb-4">
+    <section className="w-full bg-white pt-0 pb-14 sm:pt-0 sm:pb-8 lg:pt-0 lg:pb-4">
       {/* Outer wrapper matching section above */}
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         {/* Inner wrapper matching TrustRetailersSection */}

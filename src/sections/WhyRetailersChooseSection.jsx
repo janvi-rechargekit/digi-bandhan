@@ -53,7 +53,7 @@ const WhyRetailersChooseSection = () => {
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-[#1A1A9C] to-[#A41B55] bg-clip-text text-transparent">
-                  Digibandhan
+                  DigiBandhan
                 </span>
               </h2>
 

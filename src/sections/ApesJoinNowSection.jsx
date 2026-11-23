@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AepsJoinNowSection = () => {
   return (
     <section className="w-full bg-white pt-4 pb-12 sm:pt-6 sm:pb-16 lg:pt-8 lg:pb-20">
@@ -24,21 +26,21 @@ const AepsJoinNowSection = () => {
             <div className="relative z-10 flex w-full flex-col justify-center p-8 sm:p-12 lg:w-[50%] lg:p-14 xl:p-16">
               
               <h2 className="max-w-[450px] font-['Inter'] text-[32px] font-medium leading-[1.15] text-white sm:text-[40px] lg:text-[46px]">
-                Give Your Business More Ways to Grow With Digibandhan
+                Give Your Business More Ways to Grow With DigiBandhan
               </h2>
 
               <p className="mt-5 max-w-[420px] font-['Inter'] text-[15px] leading-[1.6] text-white/90 sm:text-[16px] lg:text-[18px]">
-                Thousands of retailers and agents already use Digibandhan to serve customers better and earn more every day.
+                Thousands of retailers and agents already use DigiBandhan to serve customers better and earn more every day.
               </p>
 
               {/* Join Now Button */}
               <div className="mt-8 lg:mt-10">
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact#talk-to-our-team"
                   className="inline-flex h-[48px] items-center justify-center rounded-[6px] bg-white px-8 font-['Inter'] text-[16px] font-medium text-[#B50038] transition-colors duration-300 hover:bg-gray-100 sm:h-[52px] sm:px-10 sm:text-[18px]"
                 >
                   Join Now
-                </a>
+                </Link>
               </div>
 
             </div>

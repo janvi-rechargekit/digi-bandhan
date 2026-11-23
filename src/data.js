@@ -1,7 +1,7 @@
 export const homeFaqs = [
   {
     question: "What is DigiBandhan?",
-    answer: "DigiBandhan is a digital financial services platform for retailers, distributors and individuals. It enables the partners to provide services such as AEPS, DMT, Micro ATM, mobile recharge, bill payments, UPI QR, travel bookings, etc, on a single platform."
+    answer: "DigiBandhan is a digital financial services platform for retailers, distributors and individuals. It enables the partners to provide services such as AEPS,Micro ATM, mobile recharge, bill payments, UPI QR, travel bookings, etc, on a single platform."
   },
   {
     question: "Who can be a partner in DigiBandhan?",

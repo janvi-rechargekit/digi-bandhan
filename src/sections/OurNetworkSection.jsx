@@ -7,7 +7,7 @@ const OurNetworkSection = () => {
     },
     {
       id: "csc",
-      image: "/images/network-csc.png",
+      image: "/images/network-csc.jpeg",
       alt: "CSC operator at Jan Seva Kendra",
     },
     {
@@ -47,22 +47,27 @@ const OurNetworkSection = () => {
                 key={card.id}
                 className="group relative w-full overflow-hidden rounded-[16px]"
               >
-                {/* 
-                  The images have the text baked into them. 
-                  We set an aspect ratio to match the Figma card proportions 
-                  and use object-cover so they fill the space perfectly without stretching.
-                */}
+                {/* The images have the text baked into them. */}
                 <img
                   src={card.image}
                   alt={card.alt}
                   className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   style={{ aspectRatio: "600 / 400" }} 
                 />
+                 {/* Manually Added CSC Text */}
+                {card.id === "csc" && (
+                  <div className="absolute left-5 top-11 z-10 sm:left-6 sm:top-11 lg:left-7 lg:top-[43px]">
+                    <p className="max-w-[480px] font-['Inter'] text-[24px] font-normal leading-[26px] tracking-[0px] text-[#FFFFFF]">
+                      CSC operators expanding 
+                      <br />
+                      their  service offerings
+                    </p>
               </div>
-            ))}
+            )}
           </div>
-
+            ))}
         </div>
+       </div>
       </div>
     </section>
   );

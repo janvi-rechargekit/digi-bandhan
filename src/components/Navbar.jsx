@@ -18,9 +18,9 @@ const Navbar = () => {
 
   return (
     <nav className="relative w-full border-b border-[#E5E5E5] bg-white z-50">
-      
+
       {/* Main Navbar Container */}
-      <div className="mx-auto flex h-[75px] md:h-[90px] w-full max-w-[1526px] items-center justify-between px-4 sm:px-6 md:grid md:grid-cols-[40px_auto_1fr_auto] md:gap-8 lg:grid-cols-[80px_auto_1fr_auto] lg:px-8">
+      <div className="mx-auto flex h-[75px] md:h-[75px] w-full max-w-[1526px] items-center justify-between px-4 sm:px-6 md:grid md:grid-cols-[40px_auto_1fr_auto] md:gap-8 lg:grid-cols-[80px_auto_1fr_auto] lg:px-8">
 
         {/* Empty div to push the logo to the right on desktop */}
         <div className="hidden md:block"></div>
@@ -30,7 +30,7 @@ const Navbar = () => {
           <img
             src="/images/digibandhan-logo.png"
             alt="DigiBandhan - Bharose Ka Atut Bandhan"
-            className="h-auto w-[165px] sm:w-[195px] md:w-[260px] object-contain"
+            className="mt-[-8px] h-auto w-[165px] sm:w-[195px] md:w-[220px] object-contain"
           />
         </Link>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
               onMouseLeave={() => link.hasDropdown && setIsProductHovered(false)}
             >
               {link.hasDropdown ? (
-                <Link 
+                <Link
                   to={link.href}
                   className="cursor-pointer whitespace-nowrap font-['Inter'] text-[18px] font-normal text-[#333333] transition-colors duration-300 hover:text-[#EF2042] lg:text-[20px]"
                 >
@@ -61,12 +61,12 @@ const Navbar = () => {
 
               {/* --- DESKTOP MEGA MENU --- */}
               {link.hasDropdown && isProductHovered && (
-                <div 
+                <div
                   className="absolute top-[100%] left-1/2 -translate-x-1/2 w-[850px] rounded-[12px] border border-[#E5E5E5] bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden z-50 mt-1"
                   onMouseEnter={() => setIsProductHovered(true)}
                   onMouseLeave={() => setIsProductHovered(false)}
                 >
-                  <div 
+                  <div
                     className="w-full bg-white p-10 grid grid-cols-3 gap-x-12 gap-y-6"
                     onClick={() => setIsProductHovered(false)}
                   >
@@ -75,27 +75,26 @@ const Navbar = () => {
                       <Link to="/product#aeps" className={dropdownLinkClass}>
                         Aadhaar Enabled Payment System
                       </Link>
-                      <Link to ="/product#micro-atm" className={dropdownLinkClass}>Micro ATM</Link>
-                      <Link to ="/product#dmt" className={dropdownLinkClass}>DMT (Domestic Money Transfer)</Link>
-                      <Link to ="/product#upi-cash" className={dropdownLinkClass}>UPI Cash Withdrawal</Link>
-                      <Link to ="/product#recharge" className={dropdownLinkClass}>Recharge</Link>
+                      <Link to="/product#micro-atm" className={dropdownLinkClass}>Micro ATM</Link>
+                      <Link to="/product#upi-cash" className={dropdownLinkClass}>UPI Cash Withdrawal</Link>
+                      <Link to="/product#recharge" className={dropdownLinkClass}>Recharge</Link>
                     </div>
 
                     {/* Column 2 */}
                     <div className="flex flex-col gap-6">
-                      <Link to ="/product#utility-bills" className={dropdownLinkClass}>Utility Bill Payments</Link>
-                      <Link to ="/product#credit-card" className={dropdownLinkClass}>Credit Card Bill Payment</Link>
-                      <Link to ="/product#lic-premium" className={dropdownLinkClass}>LIC Premium Payments</Link>
-                      <Link to ="/product#cms" className={dropdownLinkClass}>CMS (Cash Management Services)</Link>
-                      <Link to ="/product#pan-card" className={dropdownLinkClass}>PAN Card Creation</Link>
+                      <Link to="/product#utility-bills" className={dropdownLinkClass}>Utility Bill Payments</Link>
+                      <Link to="/product#credit-card" className={dropdownLinkClass}>Credit Card Bill Payment</Link>
+                      <Link to="/product#lic-premium" className={dropdownLinkClass}>LIC Premium Payments</Link>
+                      <Link to="/product#cms" className={dropdownLinkClass}>CMS (Cash Management Services)</Link>
+                      <Link to="/product#pan-card" className={dropdownLinkClass}>PAN Card Creation</Link>
                     </div>
 
                     {/* Column 3 */}
                     <div className="flex flex-col gap-6">
-                      <Link to ="/product#upi-qr" className={dropdownLinkClass}>UPI QR</Link>
-                      <Link to ="/product#train" className={dropdownLinkClass}>Train Ticket Booking</Link>
-                      <Link to ="/product#bus" className={dropdownLinkClass}>Bus Ticket Booking</Link>
-                      <Link to ="/product#flight" className={dropdownLinkClass}>Flight Booking</Link>
+                      <Link to="/product#upi-qr" className={dropdownLinkClass}>UPI QR</Link>
+                      <Link to="/product#train" className={dropdownLinkClass}>Train Ticket Booking</Link>
+                      <Link to="/product#bus" className={dropdownLinkClass}>Bus Ticket Booking</Link>
+                      <Link to="/product#flight" className={dropdownLinkClass}>Flight Booking</Link>
                     </div>
                   </div>
                 </div>
@@ -104,7 +103,7 @@ const Navbar = () => {
           ))}
         </div>
 
-                {/* Desktop Login Button */}
+        {/* Desktop Login Button */}
         <div className="hidden justify-end md:flex md:pr-4 lg:pr-12">
           <Link
             to="/login"
@@ -115,7 +114,7 @@ const Navbar = () => {
         </div>
 
         {/* --- MOBILE MENU BUTTON (Hamburger) --- */}
-        <button 
+        <button
           className="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
@@ -135,44 +134,43 @@ const Navbar = () => {
               <div key={link.name} className="flex flex-col border-b border-gray-100 last:border-0">
                 {link.hasDropdown ? (
                   <>
-                  <div className="flex flex-row items-center justify-between py-4">
-                    <Link 
-                        to={link.href} 
+                    <div className="flex flex-row items-center justify-between py-4">
+                      <Link
+                        to={link.href}
                         className="font-['Inter'] text-[18px] text-[#333333]"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                      {link.name}
+                        {link.name}
                       </Link>
-                      <button 
+                      <button
                         onClick={() => setIsMobileProductOpen(!isMobileProductOpen)}
                         aria-label="Toggle product submenu"
                         className="p-1"
                       >
-                      <svg 
-                        className={`w-4 h-4 transition-transform ${isMobileProductOpen ? 'rotate-180' : ''}`} 
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                      </svg>
-                    </button>
+                        <svg
+                          className={`w-4 h-4 transition-transform ${isMobileProductOpen ? 'rotate-180' : ''}`}
+                          fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </button>
                     </div>
                     {/* Mobile Product Submenu */}
                     {isMobileProductOpen && (
                       <div className="flex flex-col pl-4 pb-4 gap-4 bg-[#F8F9FA] rounded-md p-4 mb-2">
-                        <Link to ="/product#aeps" className={dropdownLinkClass}  onClick={() => setIsMobileMenuOpen(false)}> Aadhaar Enabled Payment System</Link>
-                        <Link to ="/product#micro-atm" className={dropdownLinkClass}  onClick={() => setIsMobileMenuOpen(false)}>Micro ATM </Link>
-                        <Link to ="/product#dmt" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>DMT (Domestic Money Transfer)</Link>
-                        <Link to ="/product#upi-cash" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>UPI Cash Withdrawal</Link>
-                        <Link to ="/product#recharge" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Recharge</Link>
-                        <Link to ="/product#utility-bills" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Utility Bill Payments</Link>
-                        <Link to ="/product#credit-card" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Credit Card Bill Payment</Link>
-                        <Link to ="/product#lic-premium" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>LIC Premium Payments</Link>
-                        <Link to ="/product#cms" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>CMS (Cash Management Services)</Link>
-                        <Link to ="/product#pan-card" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>PAN Card Creation</Link>
-                        <Link to ="/product#upi-qr" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>UPI QR</Link>
-                        <Link to ="/product#train" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Train Ticket Booking</Link>
-                        <Link to ="/product#bus" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Bus Ticket Booking</Link>
-                        <Link to ="/product#flight" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Flight Booking</Link>
+                        <Link to="/product#aeps" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}> Aadhaar Enabled Payment System</Link>
+                        <Link to="/product#micro-atm" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Micro ATM </Link>
+                        <Link to="/product#upi-cash" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>UPI Cash Withdrawal</Link>
+                        <Link to="/product#recharge" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Recharge</Link>
+                        <Link to="/product#utility-bills" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Utility Bill Payments</Link>
+                        <Link to="/product#credit-card" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Credit Card Bill Payment</Link>
+                        <Link to="/product#lic-premium" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>LIC Premium Payments</Link>
+                        <Link to="/product#cms" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>CMS (Cash Management Services)</Link>
+                        <Link to="/product#pan-card" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>PAN Card Creation</Link>
+                        <Link to="/product#upi-qr" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>UPI QR</Link>
+                        <Link to="/product#train" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Train Ticket Booking</Link>
+                        <Link to="/product#bus" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Bus Ticket Booking</Link>
+                        <Link to="/product#flight" className={dropdownLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Flight Booking</Link>
                       </div>
                     )}
                   </>
@@ -187,8 +185,8 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            
-           {/* Mobile Login Button */}
+
+            {/* Mobile Login Button */}
             <div className="mt-6 mb-8">
               <Link
                 to="/login"
@@ -202,5 +200,6 @@ const Navbar = () => {
         </div>
       )}
     </nav>
-)}
+  )
+}
 export default Navbar;

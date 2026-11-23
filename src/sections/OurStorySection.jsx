@@ -25,7 +25,7 @@ const OurStorySection = () => {
               </p>
               
               <p className="mt-6">
-                Digibandhan was created to close this gap. We saw an opportunity to turn local shops and service points into mini financial hubs, where people could walk in and get things done without the wait, distance, and confusion.
+                DigiBandhan was created to close this gap. We saw an opportunity to turn local shops and service points into mini financial hubs, where people could walk in and get things done without the wait, distance, and confusion.
               </p>
             </div>
 

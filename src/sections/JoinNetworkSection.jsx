@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const JoinNetworkSection = () => {
   return (
     <section className="w-full bg-white pt-0 pb-12 sm:pt-0 sm:pb-16 lg:pt-0 lg:pb-20">
@@ -24,22 +26,22 @@ const JoinNetworkSection = () => {
             <div className="relative z-10 flex w-full flex-col justify-center p-8 sm:p-12 lg:w-[50%] lg:p-16 xl:p-20">
               
               <h2 className="max-w-[450px] font-['Inter'] text-[32px] font-medium leading-[1.15] text-white sm:text-[40px] lg:text-[48px]">
-                <span className="block whitespace-nowrap">Join the Digibandhan</span>
+                <span className="block whitespace-nowrap">Join the DigiBandhan</span>
                 <span className="block">Network</span>
               </h2>
 
               <p className="mt-5 max-w-[420px] font-['Inter'] text-[15px] leading-[1.6] text-white/90 sm:text-[16px] lg:text-[18px]">
-                Becoming a Digibandhan partner is more than joining a platform. You become part of a growing network that makes financial services more accessible across India.
+                Becoming a DigiBandhan partner is more than joining a platform. You become part of a growing network that makes financial services more accessible across India.
               </p>
 
               {/* Join Now Button */}
               <div className="mt-8 lg:mt-10">
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact#talk-to-our-team"
                   className="inline-flex h-[48px] items-center justify-center rounded-[6px] bg-white px-8 font-['Inter'] text-[16px] font-medium text-[#B50038] transition-colors duration-300 hover:bg-gray-100 sm:h-[52px] sm:px-10 sm:text-[18px]"
                 >
                   Join Now
-                </a>
+                </Link>
               </div>
 
             </div>

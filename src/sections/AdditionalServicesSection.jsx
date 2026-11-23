@@ -1,11 +1,13 @@
 const AdditionalServicesSection = () => {
   return (
-    <section className="relative z-50 isolate w-full bg-white pt-4 pb-12 sm:pt-6 sm:pb-16 lg:pt-8 lg:pb-20">
+    <section
+    id="pan-card"
+     className="relative z-50 isolate w-full bg-white pt-4 pb-12 sm:pt-6 sm:pb-16 lg:pt-8 lg:pb-20">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
-        
+
         {/* Inner Container aligned with other sections */}
         <div className="mx-auto w-full max-w-[1250px]">
-          
+
           {/* Top Header Content */}
           <div className="mb-8 lg:mb-10">
             <h2 className="font-['Inter'] text-[32px] font-semibold leading-[1.2] tracking-tight sm:text-[40px] lg:text-[48px]">
@@ -21,23 +23,23 @@ const AdditionalServicesSection = () => {
           {/* Main Card Container */}
           {/* Uses a border and rounded corners to match the outer container in the Figma */}
           <div
-          id="pan-card"
-          className="flex w-full scroll-mt-[160px] flex-col overflow-hidden rounded-[16px] border border-[#E5E7EB] bg-white shadow-sm lg:flex-row lg:items-stretch lg:min-h-[400px]">
-            
+            id="pan-card"
+            className="flex w-full scroll-mt-[160px] flex-col overflow-hidden rounded-[16px] border border-[#E5E7EB] bg-white shadow-sm lg:flex-row lg:items-stretch lg:min-h-[400px]">
+
             {/* Left Side: Visual Image */}
             <div className="relative w-full lg:w-[48%]">
               <img
-                src="/images/additional-services-visual.png" 
+                src="/images/additional-services-visual.png"
                 className="h-full w-full object-cover object-left-bottom lg:absolute lg:inset-0"
               />
             </div>
 
             {/* Right Side: Text Content inside the Card */}
             <div className="flex w-full flex-col justify-center p-6 sm:p-10 lg:w-[52%] lg:px-12 lg:py-10">
-              
+
               {/* Inner Text Box with Border */}
               <div className="w-full max-w-[580px] rounded-[12px] border border-[#D1D5DB] p-6 sm:p-8 lg:p-10">
-                
+
                 <h3 className="font-['Inter'] text-[24px] font-semibold text-[#0047FF] sm:text-[28px]">
                   PAN Card Creation
                 </h3>

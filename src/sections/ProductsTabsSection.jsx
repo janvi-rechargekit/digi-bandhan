@@ -6,7 +6,6 @@ const ProductsTabsSection = () => {
   const tabs = [
     "Sound box",
     "AePS",
-    "DMT",
     "Micro ATM",
     "CMS",
     "Utility Bill Payments",
@@ -24,18 +23,13 @@ const ProductsTabsSection = () => {
     "Sound box": {
       title: "Sound box",
       description:
-        "Keep your business updated with the Digibandhan Sound Box, designed to give instant audio alerts for every successful payment. Get clear and timely payment notifications without constantly checking your phone or dashboard. It helps reduce confusion at the counter and keeps transaction tracking quick and convenient. Perfect for shops and businesses handling frequent digital payments throughout the day.",
+        "Keep your business updated with the DigiBandhan Sound Box, designed to give instant audio alerts for every successful payment. Get clear and timely payment notifications without constantly checking your phone or dashboard. It helps reduce confusion at the counter and keeps transaction tracking quick and convenient. Perfect for shops and businesses handling frequent digital payments throughout the day.",
       image: "/images/sound-box-visual.webp",
     },
     "AePS": {
       title: "AEPS (Aadhaar Enabled Payment System)",
       description: "AEPS (Aadhaar Enabled Payment System) lets your users withdraw cash, check balance, and transfer money using just their Aadhaar number and fingerprint. It provides a convenient way to offer essential banking services through your platform, especially in areas with limited access to traditional banking.",
       image: "/images/aeps-tab-visual.webp", 
-    },
-    "DMT": {
-      title: "(DMT)Domestic Money Transfer",
-      description: "Enable fast and safe domestic money transfers through your platform and help customers send funds securely to any bank account anytime with a smooth experience. Give your platform the reach to handle everyday payments with reliable processing and convenient fund movement.",
-      image: "/images/dmt-tab-visual.webp",
     },
     "Micro ATM": {
       title: "Micro ATM",
