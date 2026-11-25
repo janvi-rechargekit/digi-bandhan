@@ -12,11 +12,11 @@ const StartThreeStepsSection = () => {
       title: "Get verified",
       image: "/images/step-verify.png",
       description:
-        "Once you submit your details, we verify your documents and shop. The process is usually completed within 24 hours.",
+        "Once you submit your details, we verify your documents and shop to complete the onboarding process. ",
     },
     {
       id: "earn",
-      title: "Start earning",
+      title: "Start Offering Services",
       image: "/images/step-earn.png",
       description:
         "After verification, log in and activate the services you want to offer. Start serving customers, earn commissions, and receive your payouts on a fixed schedule.",

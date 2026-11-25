@@ -38,7 +38,7 @@ const OurMissionSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white pt-6 pb-16 sm:pt-3 sm:pb-20 lg:pt-2 lg:pb-24">
+    <section className="w-full bg-white pt-6 pb-6 sm:pt-3 sm:pb-8 lg:pt-2 lg:pb-10">
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
 
         {/* 

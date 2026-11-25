@@ -7,7 +7,7 @@ const AepsHeroSection = () => {
       <div className="mx-auto flex w-full max-w-[1537px] flex-col lg:h-[650px] lg:flex-row lg:items-start lg:justify-between lg:px-8">
         
         {/* LEFT SIDE: Text Content */}
-        <div className="relative z-10 flex w-full flex-col justify-center px-6 py-12 sm:px-10 lg:h-full lg:w-[48%] lg:py-0 lg:pl-[6%] xl:pl-[8%]">
+        <div className="relative z-10 flex w-full flex-col justify-center px-6 py-12 sm:px-10 lg:h-full lg:w-[52%] lg:py-0 lg:pl-[6%] xl:pl-[8%]">
           
           {/* Heading */}
           <h1 className="max-w-[700px] font-['Inter'] text-[36px] font-medium leading-[1.15] text-[#0047FF] sm:text-[46px] lg:text-[52px]">
@@ -16,8 +16,11 @@ const AepsHeroSection = () => {
           </h1>
 
           {/* Description */}
-          <p className="mt-6 max-w-[420px] font-['Inter'] text-[16px] leading-[1.6] text-[#333333] sm:text-[18px]">
-            Offer 13+ banking, payment, and travel services to your customers and earn ₹30,000+ per month, even without a financial background.
+          <p className="mt-6 max-w-[650px] font-['Inter'] text-[16px] leading-[1.6] text-[#333333] sm:text-[18px]">
+            Start earning up to ₹30,000 per month by offering 13+ banking,payment, and travel services to your customers. 
+            Your earnings depend on your transaction
+             volume and the services you offer,
+            and no financial background is needed. 
           </p>
 
           {/* CTA Button */}

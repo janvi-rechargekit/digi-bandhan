@@ -164,7 +164,7 @@ const ServicesIntroSection = ({
               />
               <div className="absolute right-[6.3%] top-1/2 flex w-[44.6%] -translate-y-1/2 flex-col justify-center rounded-[12px] bg-white px-8 pb-12 pt-8 shadow-xl xl:px-10 xl:pb-16 xl:pt-10">
                 <h3 className="font-['Inter'] text-[26px] font-medium leading-tight tracking-[-0.5px] text-[#0753D8] xl:text-[32px]">
-                  100 Million+ Transactions
+                  Seamless Transactions
                 </h3>
                 <p className="mt-4 font-['Inter'] text-[16px] font-normal leading-[1.5] text-[#707070] xl:text-[18px]">
                   Handle everyday financial transactions smoothly
@@ -216,7 +216,7 @@ const ServicesIntroSection = ({
               
               <div className="absolute left-[6.3%] top-1/2 flex w-[44.6%] -translate-y-1/2 flex-col justify-center rounded-[12px] bg-white px-8 pb-12 pt-8 shadow-xl xl:px-10 xl:pb-14 xl:pt-10">
                 <h3 className="font-['Inter'] text-[26px] font-medium leading-tight tracking-[-0.5px] text-[#6B21A8] xl:text-[32px]">
-                  5 Thousand + Network
+                  Growing Partner Network
                 </h3>
                 <p className="mt-4 font-['Inter'] text-[16px] font-normal leading-[1.5] text-[#707070] xl:text-[18px]">
                   Join a growing network of businesses leveraging

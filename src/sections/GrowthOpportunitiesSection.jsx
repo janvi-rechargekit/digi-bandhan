@@ -18,7 +18,7 @@ const GrowthOpportunitiesSection = () => {
     {
       title: "CSC and Jan Seva Kendra ",
       description: "operators expanding their service list",
-      image: "/images/growth-csc-kendra.png",
+      image: "/images/network-csc.jpeg",
       bgColor: "bg-[#0052C8]",
       textWidth: "max-w-[92%]",
     },

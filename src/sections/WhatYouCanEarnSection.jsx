@@ -2,7 +2,7 @@ const WhatYouCanEarnSection = () => {
   const cards = [
     {
       image: "/images/earn-card-1.png",
-      text: "You earn a commission on every transaction, whether it’s a cash withdrawal, money transfer, bill payment, recharge, or ticket booking.",
+      text: "Your earning potential depends on the services you offer and the eligible transactions customers complete, with commissions varying according to the applicable service rates and terms. ",
     },
     {
       image: "/images/earn-card-2.png",
@@ -10,7 +10,7 @@ const WhatYouCanEarnSection = () => {
     },
     {
       image: "/images/earn-card-3.png",
-      text: "Your commission is added to your wallet, and payouts are made on a fixed schedule, so you know when to expect your earnings.",
+      text: "Your earnings are added to your wallet, and payouts are made on a fixed schedule, so you know when to expect your profits.",
     },
     {
       image: "/images/earn-card-4.png",

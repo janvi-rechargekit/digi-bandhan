@@ -107,10 +107,9 @@ const HeroSection = () => {
           </h1>
 
           <p className="mt-4 lg:mt-5 w-full max-w-[480px] xl:max-w-[520px] font-['Inter'] text-[15px] sm:text-[16px] lg:text-[16px] xl:text-[18px] font-normal leading-[1.48] text-[#111111] tracking-[-0.3px] lg:tracking-[-0.4px]">
-            Become part of a growing network of 1Lakhs+ shop owners across
-            India who already trust DigiBandhan to serve their customers. Offer
-            banking, payments, recharge, and travel services from one platform
-            while earning on every transaction.
+            Join a growing network of shop owners across India who trust DigiBandhan to expand their business and serve customers better. Offer banking, payments, recharge, and travel services through one platform with opportunities to earn through eligible transactions. 
+            Give your business more ways to serve customers, earn commissions, and grow. 
+
           </p>
 
           <div className="mt-6 lg:mt-8 mb-6 sm:mb-8 lg:mb-0">

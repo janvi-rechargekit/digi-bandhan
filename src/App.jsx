@@ -17,6 +17,7 @@ import ProductsTabsSection from './sections/ProductsTabsSection';
 import LoginPage from './components/LoginPage';
 import {homeFaqs} from './data'
 import { LeadFormProvider } from './context/LeadFormContext';
+
 const HomePage = () => (
   <>
     <HeroSection />

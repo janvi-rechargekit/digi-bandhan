@@ -13,7 +13,7 @@ export const homeFaqs = [
   },
   {
     question: "How much time is taken for the verification process in DigiBandhan?",
-    answer: "DigiBandhan usually takes around 24 hours to complete the verification process of retailers and distributors after they submit the necessary documents and details. Once verified, you can log in to the platform, enable your preferred services, and begin offering digital banking and payment services to customers."
+    answer: "DigiBandhan usually completes the verification process for retailers and distributors within the estimated timeframe after they submit the necessary documents and details. Once verified, you can log in to the platform, enable your preferred services, and begin offering digital banking and payment services to customers."
   },
   {
     question: "What makes DigiBandhan a useful platform for retailers and distributors?",
