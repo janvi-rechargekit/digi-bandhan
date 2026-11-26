@@ -184,7 +184,7 @@ const ServicesIntroSection = ({
               <div className="relative z-10 w-full bg-[#0047FF] p-4 pt-6 sm:p-6 sm:pt-8">
                 <div className="mx-auto w-full rounded-[12px] bg-white p-6 shadow-lg sm:p-8">
                   <h3 className="font-['Inter'] text-[22px] font-medium leading-tight text-[#0753D8] sm:text-[26px]">
-                    100 Million+ Transactions
+                   Seamless Transactions
                   </h3>
                   <p className="mt-3 font-['Inter'] text-[14px] leading-[1.5] text-[#707070] sm:text-[16px]">
                     Handle everyday financial transactions smoothly
@@ -251,7 +251,7 @@ const ServicesIntroSection = ({
               <div className="relative z-10 w-full bg-[#4C0B8B] p-4 pt-6 sm:p-6 sm:pt-8">
                 <div className="mx-auto w-full rounded-[12px] bg-white p-6 shadow-lg sm:p-8">
                   <h3 className="font-['Inter'] text-[22px] font-medium leading-tight text-[#6B21A8] sm:text-[26px]">
-                    5 Thousand + Network
+                     Growing Partner Network
                   </h3>
                   <p className="mt-3 font-['Inter'] text-[14px] leading-[1.5] text-[#707070] sm:text-[16px]">
                     Join a growing network of businesses leveraging

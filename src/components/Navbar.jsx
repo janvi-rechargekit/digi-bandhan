@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="relative w-full border-b border-[#E5E5E5] bg-white z-50">
 
       {/* Main Navbar Container */}
-      <div className="mx-auto flex h-[75px] md:h-[75px] w-full max-w-[1526px] items-center justify-between px-4 sm:px-6 md:grid md:grid-cols-[40px_auto_1fr_auto] md:gap-8 lg:grid-cols-[80px_auto_1fr_auto] lg:px-8">
+      <div className="mx-auto flex h-[68px] md:h-[68px] w-full max-w-[1526px] items-center justify-between px-4 sm:px-6 md:grid md:grid-cols-[40px_auto_1fr_auto] md:gap-8 lg:grid-cols-[80px_auto_1fr_auto] lg:px-8">
 
         {/* Empty div to push the logo to the right on desktop */}
         <div className="hidden md:block"></div>
@@ -35,11 +35,11 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden items-center justify-self-end gap-6 md:flex lg:gap-[40px] xl:gap-[50px]">
+        <div className="hidden h-full items-center justify-self-end gap-6 md:flex lg:gap-[40px] xl:gap-[50px]">
           {navLinks.map((link) => (
             <div
               key={link.name}
-              className="relative py-8"
+              className="relative flex h-full items-center"
               onMouseEnter={() => link.hasDropdown && setIsProductHovered(true)}
               onMouseLeave={() => link.hasDropdown && setIsProductHovered(false)}
             >
@@ -128,7 +128,7 @@ const Navbar = () => {
 
       {/* --- MOBILE MENU DROPDOWN --- */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-[#E5E5E5] shadow-lg h-[calc(100vh-75px)] overflow-y-auto pb-20">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-[#E5E5E5] shadow-lg h-[calc(100vh-68px)] overflow-y-auto pb-20">
           <div className="flex flex-col px-4 pt-4">
             {navLinks.map((link) => (
               <div key={link.name} className="flex flex-col border-b border-gray-100 last:border-0">

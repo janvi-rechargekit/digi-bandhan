@@ -55,7 +55,7 @@ const HeroSection = () => {
     >
       <div className="pointer-events-none absolute bottom-0 right-0 hidden h-full w-auto items-end justify-end select-none lg:flex">
         <img
-          src="/images/digibandhan-hero.jpeg"
+          src="/images/digibandhan-hero.webp"
           alt="DigiBandhan retailer showing a successful digital payment"
           className="h-full w-auto object-contain object-right-bottom"
         />
@@ -108,7 +108,6 @@ const HeroSection = () => {
 
           <p className="mt-4 lg:mt-5 w-full max-w-[480px] xl:max-w-[520px] font-['Inter'] text-[15px] sm:text-[16px] lg:text-[16px] xl:text-[18px] font-normal leading-[1.48] text-[#111111] tracking-[-0.3px] lg:tracking-[-0.4px]">
             Join a growing network of shop owners across India who trust DigiBandhan to expand their business and serve customers better. Offer banking, payments, recharge, and travel services through one platform with opportunities to earn through eligible transactions. 
-            Give your business more ways to serve customers, earn commissions, and grow. 
 
           </p>
 
@@ -127,7 +126,7 @@ const HeroSection = () => {
         <div className="mt-4 sm:mt-6 flex w-full items-center justify-center lg:hidden">
           <div className="relative w-full max-w-[420px] sm:max-w-[480px]">
             <img
-              src="/images/digibandhan-hero-mobile.png"
+              src="/images/digibandhan-hero.webp"
               alt="DigiBandhan retailer showing digital payment services"
               className="mx-auto h-auto max-h-[380px] w-full object-contain"
               onError={(e) => {

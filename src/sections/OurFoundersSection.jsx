@@ -52,10 +52,10 @@ const OurFoundersSection = () => {
                       src={founder.image}
                       alt={founder.name}
                       className="block h-full w-full object-contain object-center"
-      style={{
-        maxWidth: "100%",
-        maxHeight: "100%",
-      }}
+                      style={{
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                     }}
                      />
                   ) : (
                     // <div className="flex h-full w-full items-center justify-center">

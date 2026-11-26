@@ -19,7 +19,7 @@ const WhatYouCanEarnSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white pt-4 pb-2 sm:pt-8 sm:pb-4 lg:pt-8 lg:pb-8">
+    <section className="w-full bg-white pt-4 pb-14 sm:pt-0 sm:pb-16 lg:pt-6 lg:pb-20">
       {/* Outer container aligned with all other sections */}
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
         {/* Inner container aligned edge-to-edge */}

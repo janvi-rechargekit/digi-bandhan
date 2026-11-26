@@ -42,10 +42,7 @@ const OurMissionSection = () => {
       <div className="mx-auto w-full max-w-[1537px] px-4 sm:px-6 lg:px-8">
 
         {/* 
-          FIX: Changed the inner container to shift left.
-          - Removed `mx-auto` (which forced it to center).
-          - Added `mr-auto` to push it to the left.
-          - Changed `max-w` to `w-full max-w-[1250px]` so it spans properly on large screens.
+          FIX: Changed `max-w` to `w-full max-w-[1250px]` so it spans properly on large screens.
         */}
          <div className="mx-auto w-full max-w-[1140px] lg:-translate-x-4 xl:max-w-[1180px] xl:-translate-x-6">
           {/* Section Heading */}
