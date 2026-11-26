@@ -130,7 +130,7 @@ const HeroSection = () => {
               alt="DigiBandhan retailer showing digital payment services"
               className="mx-auto h-auto max-h-[380px] w-full object-contain"
               onError={(e) => {
-                e.currentTarget.src = '/images/digibandhan-hero.png'
+                e.currentTarget.src = '/images/digibandhan-hero.webp'
               }}
             />
           </div>

@@ -24,7 +24,7 @@ const FooterSection = () => {
     {
       heading: "Resources",
       links: [
-        { name: "Blog", path: "#" },
+        { name: "Blog", path: "/blogs" },
         { name: "FAQs", path: "#" },
       ],
     },

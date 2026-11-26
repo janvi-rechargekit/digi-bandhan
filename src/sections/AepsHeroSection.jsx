@@ -17,7 +17,7 @@ const AepsHeroSection = () => {
 
           {/* Description */}
           <p className="mt-6 max-w-[650px] font-['Inter'] text-[16px] leading-[1.6] text-[#333333] sm:text-[18px]">
-            Start earning up to ₹30,000 per month by offering 13+ banking,payment, and travel services to your customers. 
+            Start earning up to ₹30,000 per month by offering 13+ banking, payment, and travel services to your customers. 
             Your earnings depend on your transaction
              volume and the services you offer,
             and no financial background is needed. 

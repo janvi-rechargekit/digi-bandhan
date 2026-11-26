@@ -16,7 +16,9 @@ import AepsPage from './AepsPage';
 import ProductsTabsSection from './sections/ProductsTabsSection';
 import LoginPage from './components/LoginPage';
 import {homeFaqs} from './data'
-import { LeadFormProvider } from './context/LeadFormContext';
+import {LeadFormProvider } from './context/LeadFormContext';
+import BlogSection from './sections/BlogSection';
+import ScrollToTop from './components/ScrollToTop';
 
 const HomePage = () => (
   <>
@@ -37,6 +39,7 @@ function App() {
   return (
     <BrowserRouter>
       <LeadFormProvider>
+        <ScrollToTop />
       <header className="sticky top-0 z-50 w-full">
         {/* <AnnouncementBar /> */}
         <Navbar />
@@ -50,11 +53,13 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} /> 
         <Route path="/product" element={<AepsPage />} />
+        <Route path="/blogs" element={<BlogSection />} />
 
         {/* Login Route */}
         <Route path="/login" element={<LoginPage />} /> 
       </Routes>
       </LeadFormProvider>
+      
     </BrowserRouter>
   );
 }

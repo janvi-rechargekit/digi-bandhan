@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'Product', href: '/product', hasDropdown: true },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Blogs', href: '#blogs' },
+    { name: 'Blogs', href: '/blogs' },
   ];
 
   const dropdownLinkClass = "font-['Inter'] text-[15px] leading-[1.4] text-[#333333] transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#1A1A9C] hover:via-[#A41B55] hover:to-[#EF2042]";
